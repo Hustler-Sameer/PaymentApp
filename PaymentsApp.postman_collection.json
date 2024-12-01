@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "a2a782f4-3ac2-4c9f-a37e-d58bb7ea8bb0",
+		"name": "PaymentsApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28384689"
+	},
+	"item": [
+		{
+			"name": "api/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/hdfcWebHook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"0.3101655172981994\",\r\n    \"user_identifier\":1,\r\n    \"amount\":\"4000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/hdfcWebHook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"hdfcWebHook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
