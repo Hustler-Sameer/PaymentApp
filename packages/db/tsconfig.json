@@ -1,8 +1,10 @@
 {
-    "extends": "@repo/typescript-config/react-library.json",
-    "compilerOptions": {
-      "outDir": "dist"
-    },
+    // "extends": "@repo/typescript-config/react-library.json",
+      "compilerOptions": {
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+      },
+    
     "include": ["src"],
     "exclude": ["node_modules", "dist"]
   }
